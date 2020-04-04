@@ -1,7 +1,7 @@
 {
   "build": {
     "env": {
-      "API_BASE_URL": "@api_base_url"
+      "API_BASE_URL": "@frontendmentor_api_url"
     }
   }
 }

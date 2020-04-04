@@ -1,5 +1,5 @@
-import { getEndpoint } from "../../pages/api/easybank/easybank-api-utils";
-import { fetcher } from "../../pages/api/utils";
+import { getEndpoint } from "./easybank-api-utils";
+import { fetcher } from "../utils";
 
 export const getArticlesFileName = "/get-articles";
 
