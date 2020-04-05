@@ -34,8 +34,13 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run format",
-      "pre-push": "npm run format && npm run test-local"
+      "pre-commit": "lint-staged",
+      "pre-push": "lint-staged && npm run test-local"
     }
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "prettier --write"
+    ]
   }
 }
