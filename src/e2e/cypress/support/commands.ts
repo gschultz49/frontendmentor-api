@@ -24,8 +24,6 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
 
-
-
 // // add a custom command cy.foo()
 // Cypress.Commands.add('foo', () => 'foo')
 

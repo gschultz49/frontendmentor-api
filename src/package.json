@@ -5,7 +5,10 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "format": "prettier --write 'pages/**/*.{ts,tsx}'  'e2e/**/*.{ts,tsx,js}' ",
+    "test-local": "cypress run --spec 'e2e/cypress/integration/*.ts' --env baseUrl='http://localhost:3000/api' --project e2e/",
+    "test-prod": "cypress run --spec 'e2e/cypress/integration/*.ts' --env baseUrl='https://frontendmentor-api.now.sh/api' --project e2e/"
   },
   "keywords": [],
   "author": "",
@@ -32,7 +35,11 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged",
+      "pre-push": [
+        "lint-staged",
+        "npm run test-local"
+      ]
     }
   },
   "lint-staged": {
