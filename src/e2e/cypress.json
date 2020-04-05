@@ -1,0 +1,5 @@
+{
+  "env":{
+    "baseUrl": "https://frontendmentor-api.now.sh"
+  }
+}
