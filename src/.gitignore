@@ -2,3 +2,4 @@
 .env
 .next/
 node_modules/
+e2e/cypress.env.json
