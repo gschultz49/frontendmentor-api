@@ -3,5 +3,5 @@
     "baseUrl": "https://frontendmentor-api.now.sh"
   },
   "projectId": "n9vvxj",
-  "integrationFolder": "."
+  "integrationFolder": "./cypress/integration"
 }
