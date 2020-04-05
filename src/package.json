@@ -25,7 +25,19 @@
     "hoist-non-react-statics": "^3.3.2",
     "postcss-preset-env": "^6.7.0",
     "tailwindcss": "^1.2.0",
-    "typescript": "^3.8.3"
+    "typescript": "^3.8.3",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.1.1",
+    "prettier": "^2.0.2"
   },
-  "description": ""
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.ts": [
+      "prettier --write"
+    ]
+  }
 }
