@@ -5,9 +5,7 @@ describe("Get WhyChoose", () => {
     cy.log(`Testing url: ${url}`);
     cy.request(url).then((response) => {
       const firstWhyChoose = response.body[0];
-
       cy.log(`Received object: ${JSON.stringify(firstWhyChoose)}`);
-
       expect(firstWhyChoose).to.have.property("img");
       expect(firstWhyChoose).to.have.property("title");
       expect(firstWhyChoose).to.have.property("description");

@@ -33,6 +33,4 @@ const whyChooseCards: whyChooseCard[] = [
   },
 ];
 
-export default (req: NowRequest, res: NowResponse) => {
-  res.json(whyChooseCards);
-};
+export default (req: NowRequest, res: NowResponse) => res.json(whyChooseCards);
