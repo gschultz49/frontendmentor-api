@@ -30,18 +30,12 @@
     "tailwindcss": "^1.2.0",
     "typescript": "^3.8.3",
     "husky": "^4.2.3",
-    "lint-staged": "^10.1.1",
     "prettier": "^2.0.2"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "lint-staged && npm run test-local"
+      "pre-commit": "npm run format",
+      "pre-push": "npm run format && npm run test-local"
     }
-  },
-  "lint-staged": {
-    "*.ts": [
-      "prettier --write"
-    ]
   }
 }
