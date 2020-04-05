@@ -1,4 +1,4 @@
-import { NowRequest, NowResponse } from "./node_modules/@now/node";
+import { NowRequest, NowResponse } from "@now/node";
 
 export interface jobListing {
   id: number;
